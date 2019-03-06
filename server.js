@@ -10,7 +10,6 @@ const config = require('./config')
 
 /* Middlewares */
 const main = require('./server/main')
-// const item = require('./server/item')
 
 const static = require('koa-static')
 
@@ -33,10 +32,6 @@ if (module.parent) {
     mongoose.connection.once('open', () => {
       router
         .get('/', main.render)
-      // .get('/item', item.getItem)
-      // .get('/login', session.login)
-      // .get('/api/item/{id}', item.getItem)
-
 
       server
         .use(router.routes())
@@ -49,10 +44,6 @@ if (module.parent) {
   mongoose.connection.once('open', () => {
     router
       .get('/', main.render)
-    // .get('/item', item.getItem)
-    // .get('/login', session.login)
-    // .get('/api/item/{id}', item.getItem)
-
 
     server
       .use(router.routes())
