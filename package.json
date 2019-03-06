@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/ByPrice/byprice-full-stack-web-developer#readme",
   "dependencies": {
-    "koa": "^2.7.0",
-    "rc": "^1.2.8"
+    "koa": "^2.7.0"
   }
 }
