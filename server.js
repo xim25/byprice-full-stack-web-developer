@@ -3,7 +3,6 @@ const server = new Koa()
 const router = require('koa-router')()
 const mongoose = require('mongoose')
 const render = require('koa-ejs')
-const path = require('path')
 
 const pckg = require('./package.json')
 const config = require('./config')
