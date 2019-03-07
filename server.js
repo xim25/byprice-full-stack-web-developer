@@ -30,12 +30,16 @@ app.use(static('public/css'))
 router
   .get('/', main.render)
 
-app
+  app
   .use(router.routes())
   .use(router.allowedMethods())
 
-app.listen(config.port, function () {
-  console.info('process.env.NODE_ENV', process.env.NODE_ENV)
-  console.info('version', pckg.version)
-  console.info(JSON.stringify(config))
-})
+if (module.parent) {
+  module.exports = app
+} else {
+  app.listen(config.port, function () {
+    console.info('process.env.NODE_ENV', process.env.NODE_ENV)
+    console.info('version', pckg.version)
+    console.info(JSON.stringify(config))
+  })
+}
