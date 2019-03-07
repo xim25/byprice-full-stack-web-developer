@@ -14,18 +14,28 @@ Crea un servicio `/api/shortestword` este deberá ser un método `POST` que devu
 - Deberá pasar los test ubicados en `/test/shortestword`.
 - Entre menos código y más ingenioso más puntos.
 
-## Paso 4 - 35 puntos
+## Paso 4 - 15 puntos
 Haz un merge del branch `paso-4` en `master` y repara los conflictos.
-Crea una UI en el `home.html` utilizando React donde se puedan listar, crear, editar y eliminar usuarios. 
-- Agrega las propiedades que creas convenientes y documentales modelo `user` en el archivo `/server/models/user.js` 
+Crea servicios RESTful para listar, crear y eliminar usuarios programa primero sus pruebas.
+- Agrega las propiedades que creas convenientes y documentales modelo `user` en el archivo `/server/models/user.js`
+- Crea un test para crear un usuario 
+- Crea un test para listar usuarios
+- Crea un test para eliminar un usuario
+- Crea un servicio para crear un usuario
+- Crea un servicio para listar usuarios
+- Crea un servicio para eliminar un usuario
+
+## Paso 5 - 25 puntos
+Crea una UI en el `home.html` utilizando `React` y `@material-ui/core` donde se puedan listar, crear y eliminar usuarios utilizando los servicios anteriores.
+- No es necesario utilizar todas las propiedades que del modelo `user` basta con nombre y correo electrónico
 - Utiliza `fetch`
 - Utiliza la mayor cantidad de fetures de ES2015
 - Utiliza `webpack` para construir el proyecto
-- Crea minimo 5 tests para todos los endpoints de `/api/users`
 - BONUS: Usa redux darle puntos extras a tu puntuación.
 
-## Paso 5 - 15 puntos
-Consume desde el browser el servicio `/api/animation` para obtener un svg el cual tendrás que animar usando sólo css y colocarlo en el home `home.html` debe lucir como en la siguiente animación:
+## Paso 5 - 10 puntos
+Utiliza la imagen svg para animarla usando sólo css debe lucir como en la siguiente animación:
+<img src="https://s3-us-west-2.amazonaws.com/byprice-app/attachments/logo-fx.gif"/>
 
 ## Paso 6 - 25 puntos
 Crea un endpoint que consulte los siguientes enlaces y devuelve un json el servicio deberá estar en `/api/mini-scrapper` y debe pasar las pruebas (puedes utilizar las librerías que creas necesarias).
