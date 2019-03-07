@@ -10,7 +10,7 @@ Haz un merge del branch `paso-2` en `master` y repara los conflictos.
 
 ## Paso 3 - 10 puntos
 Haz un merge del branch `paso-3` en `master` y repara los conflictos.
-Crea un servicio `/api/shortestword` este deberá ser un método `POST` que devuelva la palabra más corta de un Array de hasta 8 de longitud.
+Crea un servicio `/api/shortestword` este deberá ser un método `POST` que devuelva la longitud palabra más corta de un Array de hasta 8 de items.
 - Deberá pasar los test ubicados en `/test/shortestword`.
 - Entre menos código y más ingenioso más puntos.
 
