@@ -15,7 +15,7 @@ const static = require('koa-static')
 
 render(server, {
   root: path.join(__dirname, 'server/views'),
-  layout: 'master',
+  layout: 'template',
   viewExt: 'html',
   cache: false,
   debug: true
