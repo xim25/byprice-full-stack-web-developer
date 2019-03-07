@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/node,osx,visualstudiocode,python,windows,linux
 
+## Ignore built files
+/public/js/*
+
 ### Node ###
 # Logs
 logs
