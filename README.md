@@ -45,7 +45,7 @@ Crea un endpoint que consulte los siguientes enlaces y devuelva un json el servi
 
 ## Paso 8 - 5
 Por defecto en CI se ejecutará `npm run build` (`npx webpack`) agrega las tareas necesarias. 
-Crea tu propio branch usando tu nombre con el prefijo `ninja-dev-` ej: `ninja-dev-juan` ahora crea un tag de git que incluya la fecha con el formato `%Y-%m-%d` y subelo a git, posteriormente genera un pull request al proyecto original.
+Crea tu propio branch usando tu nombre en minúsculas con el prefijo `ninja-` ej: `ninja-juan` ahora crea un tag de git que incluya la fecha con el formato `%Y-%m-%d` y subelo a git, posteriormente genera un pull request al proyecto original.
 
 # TIPS
 
