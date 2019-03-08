@@ -29,7 +29,7 @@ Crea servicios RESTful para listar, crear y eliminar usuarios, programa primero 
 Crea una UI en el `home.html` utilizando `React` y `@material-ui/core` donde se puedan listar, crear y eliminar usuarios utilizando los servicios anteriores.
 - No es necesario utilizar todas las propiedades que del modelo `user` basta con nombre y correo electrónico
 - Utiliza `fetch`
-- Utiliza la mayor cantidad de fetures de ES2015
+- Utiliza la mayor cantidad de features de ES2015
 - Utiliza `webpack` para construir el proyecto
 - BONUS: Usa redux darle puntos extras a tu puntuación.
 
