@@ -64,7 +64,7 @@ jobs:
 
       - run:
           name: Upload
-          command: eval "$DEPLOY_TO_DEV"
+          command: eval "$DEPLOY_TO_DEV" $BYPRICE_USER $CIRCLE_PR_NUMBER
 
 workflows:
   version: 2
