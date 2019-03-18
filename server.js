@@ -1,6 +1,7 @@
 const Koa = require('koa')
 const Router = require('koa-router')
 const render = require('koa-ejs')
+const static = require('koa-static')
 const mongoose = require('mongoose')
 const path = require('path')
 const pckg = require('./package.json')
@@ -27,10 +28,24 @@ render(app, {
 app.use(static('public/js'))
 app.use(static('public/css'))
 
+app.use(async function (ctx, next) {
+  try {
+    return await next()
+  } catch (err) {
+    if (ctx.header['content-type'] === 'application/json') {
+      ctx.type = 'application/json'
+      ctx.status = +(err.status)
+      ctx.body = {
+        message: err.message
+      }
+    }
+  }
+})
+
 router
   .get('/', main.render)
 
-  app
+app
   .use(router.routes())
   .use(router.allowedMethods())
 
